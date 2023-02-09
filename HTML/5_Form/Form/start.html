@@ -15,5 +15,38 @@
     </style>
   </head>
 
-  <body></body>
+  <body>
+    <form>
+      <label for="email"></label>
+      <input type="email" name="email" placeholder="Email" required>
+      <label for="password"></label>
+      <input type="password" name="password" placeholder="Password" required pattern="[A-Za-z]+" minlength="5">
+      <label for="first_name"></label>
+      <input type="text" name="first_name" placeholder="First Name" required pattern="[A-Za-z]+" minlength="2" maxlength="20">
+      <label for="last_name"></label>
+      <input type="text" name="last_name" placeholder="Last Name" required pattern="[A-Za-z]+" minlength="5" maxlength="25">
+      <label for="date"></label>
+      <input type="date" name="date" placeholder="Date of Birth" required>
+      <label for="tnumber"></label>
+      <input type="tel" name="tnumber" placeholder="Telephone Number" required pattern="[0-9]{10}" >
+      <div>
+        <h4>Choose a plane:</h4>
+        <label>
+          <input type="checkbox" class="radio" value="1" />Free Plan</label required>
+        <label>
+          <input type="checkbox" class="radio" value="1" />7 day free (59,99$)</label required>
+        <label>
+          <input type="checkbox" class="radio" value="1" />Pro Plan (49,99$)</label required>
+      </div>
+      <label for="creditcard"></label>
+      <input type="text" name="creditcard" placeholder="Credit Card Number" required minlength="16" maxlength="16">
+      <label for="CVC"></label>
+      <input type="text" name="CVC" placeholder="CVC" required minlength="3" maxlength="3">
+      <label for="exp_date">Expiration date:</label>
+      <input type="date" name="exp_date" required>
+      <label for="address"></label>
+      <input type="text" name="address" placeholder="Billing Address" required>
+      <button>SUBMIT NOW!</button>
+    </form>
+  </body>
 </html>
