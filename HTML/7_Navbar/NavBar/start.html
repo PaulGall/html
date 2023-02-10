@@ -1,32 +1,30 @@
 <!DOCTYPE html>
 <html lang="it">
   <head>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
-    />
     <title>HTML NavBar</title>
   </head>
-
   <body>
-    <div class="topnav">
-      <a class="active" href="#home">NavBar</a>
-      <a href="#home">Home</a>
-      <a href="#link">Link</a>
-      <a href="#disabled">Disabled</a>
-        <select id="form-plan" name="select" required >
-          <option value="0">Dropdown</option>
-          <optgroup label="Select">
-            <option value="1">First</option>
-            <option value="2">Second</option>
-            <option value="3">Third</option>
-          </optgroup>
+    <nav>
+      <div style="background-color:Gray;border:1px solid white;">
+        &nbsp
+        <a style="color:white;">NavBar</a>
+        &nbsp
+        <a href="https://www.develhope.co" style=color:white;">Home</a>
+        &nbsp
+        <a href="Link" style="text-decoration: none;color:white">Link</a>
+        <a>
+          <select id="123" name="dropdown">
+            <option disabled selected hidden>Dropdown</option>
+            <option>First</option>
+            <option>Second</option>
+            <option>Third</option>
+          </select>
         </a>
-      <input type="textarea" placeholder="Search">
-      <button>Search</button>
-    </div>
-    </div>
-  </body>
+        <a style="color:rgba(163, 161, 161, 0.925)">Disabled</a>
+        <input type="text" placeholder="Search">
+        <button> Search </button>
+      </div>
+    </nav>
+
+</body>
 </html>
